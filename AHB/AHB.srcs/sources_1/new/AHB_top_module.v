@@ -108,7 +108,7 @@ module AHB_top_module(
 
         .htrans(htrans1),
         .hwdata(hwdata1),
-        .slv_sel_out(slv_sel_out),
+        .slv_sel_out(slv_sel_out1),
         .hbusreq(hbusreq1)
         );
         
@@ -124,7 +124,7 @@ module AHB_top_module(
         .hwrite(hwrite2),
         .htrans(htrans2),
         .hwdata(hwdata2),
-        .slv_sel_out(slv_sel_out),
+        .slv_sel_out(slv_sel_out2),
         .hbusreq(hbusreq2)
         );
         
@@ -146,7 +146,8 @@ module AHB_top_module(
         .haddr(haddr3),
         .hwrite(hwrite3),
         .htrans(htrans3),
-        .hwdata(hwdata3)
+        .hwdata(hwdata3),
+        .slv_sel_out(slv_sel_out3)
 //        .hbusreq(hbusreq3)
         );
         
@@ -172,10 +173,13 @@ module AHB_top_module(
     AHB_decoder AHB_decoder_d(
         .hclk(hclk),
         .hresetn(hresetn),
-        .slv_sel_out(slv_sel_out),
+        .slv_sel_out1(slv_sel_out1),
+        .slv_sel_out2(slv_sel_out2),
+        .slv_sel_out3(slv_sel_out3),
         .hsel1(hsel1),
         .hsel2(hsel2),
-        .hsel3(hsel3)
+        .hsel3(hsel3),
+        .hmaster(hmaster)
         );
         
     AHB_addr_mux AHB_addr_mux_d(
