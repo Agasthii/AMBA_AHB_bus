@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09/30/2024 03:51:49 PM
+// Create Date: 10/30/2024 10:56:57 AM
 // Design Name: 
-// Module Name: AHB_master_top
+// Module Name: AHB_master3_interface
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module AHB_master_top(
+module AHB_master3_interface(
 
     );
 endmodule

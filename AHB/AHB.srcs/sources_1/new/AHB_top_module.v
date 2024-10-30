@@ -128,7 +128,7 @@ module AHB_top_module(
         .hbusreq(hbusreq2)
         );
         
-    AHB_master AHB_master3_d(
+    AHB_master3_interface AHB_master3_interface_d(
         .hclk(hclk),
         .hresetn(hresetn),
         .hrdata(hrdata_mux_out),

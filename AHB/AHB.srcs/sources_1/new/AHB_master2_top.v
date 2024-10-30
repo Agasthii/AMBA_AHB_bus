@@ -67,7 +67,7 @@ module AHB_master2_top(
         .dout(dout)
         );
     
-    AHB_master AHB_master2_d(
+    AHB_master AHB_master2_interface_d(
         .hclk(hclk),
         .hresetn(hresetn),
         .hrdata(hrdata),

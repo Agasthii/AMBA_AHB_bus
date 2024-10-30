@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09/25/2024 04:48:28 PM
+// Create Date: 10/22/2024 07:10:52 PM
 // Design Name: 
-// Module Name: AHB_master
+// Module Name: master_interface
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -114,7 +114,7 @@ module AHB_master #(
                     
                     if (!enable)
                         next_state <= idle;
-                    else if (hgrant && hready)
+                    else if (hgrant)  //if  grant is given master will access the bus
                         next_state <= addr_phase;
                     else
                         next_state <= req_phase;
@@ -152,7 +152,7 @@ module AHB_master #(
                     
                     if (!enable)
                         next_state <= idle;
-                    else if (hready)
+                    else if (hready && hgrant)
                         next_state <= data_phase;
                     else
                         next_state <= wait_phase;
@@ -171,14 +171,12 @@ module AHB_master #(
                     
                     if (!enable)
                         next_state <= idle;
-                    else if (hready)
+                    else if (hready && hgrant)
                         next_state <= data_phase;
                     else
                         next_state <= wait_phase;
                 end
             endcase
         end
-    end
-    
-    
+    end    
 endmodule
