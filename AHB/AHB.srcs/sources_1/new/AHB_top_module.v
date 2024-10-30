@@ -257,7 +257,7 @@ module AHB_top_module(
         .hsplit(hsplit3)
         );
     
-    AHB_slave AHB_slave_4(
+    AHB_slave4_interface AHB_slave4_interface_d(
         .hclk(hclk),
         .hresetn(hresetn),
         .din(ext_slave_din),

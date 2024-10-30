@@ -56,7 +56,7 @@ module AHB_slave1_top(
         .din(din)
         );
     
-    AHB_slave AHB_slave1(
+    AHB_slave AHB_slave1_interface_d(
         .hclk(hclk),
         .hresetn(hresetn), 
         .din(din),

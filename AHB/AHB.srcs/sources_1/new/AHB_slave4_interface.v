@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09/25/2024 04:49:09 PM
+// Create Date: 10/30/2024 11:12:02 AM
 // Design Name: 
-// Module Name: AHB_slave
+// Module Name: AHB_slave4_interface
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module AHB_slave(
+module AHB_slave4_interface(
     input hclk, //master clock
     input hresetn,  //master reset, active LOW
     //from slave module
