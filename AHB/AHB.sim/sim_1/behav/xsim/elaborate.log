@@ -5,5 +5,13 @@ Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:56]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'hwrite_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:54]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:53]
+ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:73]
+ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:72]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:70]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:68]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:62]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

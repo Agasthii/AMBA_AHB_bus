@@ -1,0 +1,720 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 30 11:49:02 2024
+# Process ID: 29136
+# Current directory: C:/Users/User/Documents/AHB/AMBA_AHB_bus/AHB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31948 C:\Users\User\Documents\AHB\AMBA_AHB_bus\AHB\AHB.xpr
+# Log file: C:/Users/User/Documents/AHB/AMBA_AHB_bus/AHB/vivado.log
+# Journal file: C:/Users/User/Documents/AHB/AMBA_AHB_bus/AHB\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 11:50:15 2024...
+Project 1-313] Project file moved from 'E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB' since last save.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorVersionActiveHdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXsim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionXcelium
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimulatorGccVersionActiveHdl
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/AHB/AHB.gen/sources_1', nor could it be found using path 'E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.gen/sources_1'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableResourceEstimation
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimCompileState
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name FeatureSet
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name ClassicSocBoot
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name LocalIPRepoLeafDirName
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2023) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2023) not recognized by Vivado. 
+
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for tul.com.tw:pynq-z2:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+WARNING: [Project 1-231] Project 'AHB.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1144.316 ; gain = 0.000
+update_compile_order -fileset sources_1
+save_project_as project_1 C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1 -force
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_addr_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master3_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave4_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave4_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:56]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'hwrite_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:54]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:53]
+ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:73]
+ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:72]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:70]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:68]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:62]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:56]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'hwrite_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:54]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:53]
+ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:73]
+ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:72]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:65]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:64]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:62]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:52]
+INFO: [#UNDEF] Sorry, too many errors..
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_addr_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master3_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave4_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave4_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:56]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'hwrite_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:54]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:53]
+ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:73]
+ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:72]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:65]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:64]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:62]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:52]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:51]
+ERROR: [VRFC 10-3180] cannot find port 'hwrite_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:50]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:49]
+ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:65]
+ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:64]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:61]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:60]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:58]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:270]
+INFO: [#UNDEF] Sorry, too many errors..
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_addr_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master3_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave4_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave4_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:270]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:268]
+ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:267]
+ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:266]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:263]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1157.996 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_addr_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master3_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave4_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave4_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:231]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:107]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:113]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:244]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:257]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:221]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:234]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:247]
+ERROR: [VRFC 10-3180] cannot find port 'hclk' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:261]
+ERROR: [VRFC 10-3180] cannot find port 'hresetn' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:262]
+ERROR: [VRFC 10-3180] cannot find port 'din' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:263]
+ERROR: [VRFC 10-3180] cannot find port 'hsel' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:264]
+ERROR: [VRFC 10-3180] cannot find port 'hwrite' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:265]
+ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:266]
+ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:267]
+ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:268]
+ERROR: [VRFC 10-3180] cannot find port 'hwrite_out' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:269]
+ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:270]
+ERROR: [VRFC 10-3180] cannot find port 'hrdata' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:271]
+ERROR: [VRFC 10-3180] cannot find port 'hready' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:272]
+ERROR: [VRFC 10-3180] cannot find port 'hresp' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:273]
+ERROR: [VRFC 10-3180] cannot find port 'hsplit' on this module [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:274]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:92]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1157.996 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_addr_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master3_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave4_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave4_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_top_module
+INFO: [VRFC 10-2458] undeclared symbol slv_sel_out, assumed default net type wire [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:201]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3633] port 'hgrant' is already connected [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:155]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slv_sel_out' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:201]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'mux_sel' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:242]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:257]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:107]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:113]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:270]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:283]
+ERROR: [VRFC 10-3633] port 'hgrant' is already connected [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:168]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:247]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:260]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:273]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:92]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1157.996 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_addr_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master3_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave4_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave4_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_top_module
+INFO: [VRFC 10-2458] undeclared symbol slv_sel_out, assumed default net type wire [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:201]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slv_sel_out' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:201]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'mux_sel' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:242]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:257]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:107]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:113]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:270]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:283]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:247]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:260]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:273]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:92]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AHB_master_module
+Compiling module xil_defaultlib.AHB_master
+Compiling module xil_defaultlib.AHB_master1_top
+Compiling module xil_defaultlib.AHB_master2_module
+Compiling module xil_defaultlib.AHB_master2_top
+Compiling module xil_defaultlib.AHB_master3_interface
+Compiling module xil_defaultlib.AHB_arbiter
+Compiling module xil_defaultlib.AHB_decoder
+Compiling module xil_defaultlib.AHB_addr_mux
+Compiling module xil_defaultlib.AHB_write_data_mux
+Compiling module xil_defaultlib.AHB_read_data_mux
+Compiling module xil_defaultlib.AHB_slave_module
+Compiling module xil_defaultlib.AHB_slave
+Compiling module xil_defaultlib.AHB_slave1_top
+Compiling module xil_defaultlib.AHB_slave2_top
+Compiling module xil_defaultlib.AHB_slave3_top
+Compiling module xil_defaultlib.AHB_slave4_interface
+Compiling module xil_defaultlib.AHB_top_module
+Compiling module xil_defaultlib.AHB_master_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AHB_master_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/AHB_master_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 30 12:32:59 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1157.996 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AHB_master_tb_behav -key {Behavioral:sim_1:Functional:AHB_master_tb} -tclbatch {AHB_master_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source AHB_master_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AHB_master_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 1179.086 ; gain = 21.090
+run 100 ns
+run 100 ns
+run 100 ns
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_addr_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master3_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave1_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave2_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave3_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave4_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave4_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_slave_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_top_module
+INFO: [VRFC 10-2458] undeclared symbol slv_sel_out, assumed default net type wire [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:201]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_master_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 76d38081aa9248278e6d29201145886c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slv_sel_out' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:201]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'mux_sel' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:242]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:257]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:107]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave1_top.v:113]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:270]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:283]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:247]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:260]
+WARNING: [VRFC 10-5021] port 'hmaster' is not connected on this instance [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_top_module.v:273]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave2_top.v:92]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hmaster' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:86]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'hresp' [C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/project_1.srcs/sources_1/new/AHB_slave3_top.v:92]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AHB_master_module
+Compiling module xil_defaultlib.AHB_master
+Compiling module xil_defaultlib.AHB_master1_top
+Compiling module xil_defaultlib.AHB_master2_module
+Compiling module xil_defaultlib.AHB_master2_top
+Compiling module xil_defaultlib.AHB_master3_interface
+Compiling module xil_defaultlib.AHB_arbiter
+Compiling module xil_defaultlib.AHB_decoder
+Compiling module xil_defaultlib.AHB_addr_mux
+Compiling module xil_defaultlib.AHB_write_data_mux
+Compiling module xil_defaultlib.AHB_read_data_mux
+Compiling module xil_defaultlib.AHB_slave_module
+Compiling module xil_defaultlib.AHB_slave
+Compiling module xil_defaultlib.AHB_slave1_top
+Compiling module xil_defaultlib.AHB_slave2_top
+Compiling module xil_defaultlib.AHB_slave3_top
+Compiling module xil_defaultlib.AHB_slave4_interface
+Compiling module xil_defaultlib.AHB_top_module
+Compiling module xil_defaultlib.AHB_master_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AHB_master_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1265.062 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1265.062 ; gain = 0.000
+save_wave_config {C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/AHB_master_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/AHB_master_tb_behav.wcfg
+set_property xsim.view C:/Users/User/Documents/AHB/AMBA_AHB_bus/project_1/AHB_master_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 12:42:52 2024...

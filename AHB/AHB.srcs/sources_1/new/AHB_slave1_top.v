@@ -51,9 +51,9 @@ module AHB_slave1_top(
         .hclk(hclk),
         .hresetn(hresetn),
         .addr_out(addr_out),
-        .hwrite_out(hwrite_out),
-        .dout(dout),
-        .din(din)
+        .hwrite(hwrite_out),
+        .hwdata(dout),
+        .hrdata(din)
         );
     
     AHB_slave AHB_slave1_interface_d(
