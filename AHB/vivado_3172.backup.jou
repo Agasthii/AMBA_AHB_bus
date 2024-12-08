@@ -1,0 +1,158 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Dec  8 22:23:34 2024
+# Process ID: 3172
+# Current directory: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2820 C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\AHB.xpr
+# Log file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/vivado.log
+# Journal file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB\vivado.jou
+# Running On: LAPTOP-CPUREE27, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16788 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+source AHB_master_tb.tcl
+update_compile_order -fileset sources_1
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/counter}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/counter_id}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/slv_sel_in}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/din}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/wr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/enable}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/hbusreq_in}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/present_mast}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq2}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/present_mast}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans2}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hsplit1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant2}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant3}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hmaster}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/mast1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/mast3}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/next_mast}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_addr_mux_d/mast1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_addr_mux_d/mast2}} {{/AHB_master_tb/AHB_top_module_dut/AHB_addr_mux_d/hwrite1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_addr_mux_d/hwrite2}} {{/AHB_master_tb/AHB_top_module_dut/AHB_addr_mux_d/mux_sel}} {{/AHB_master_tb/AHB_top_module_dut/AHB_addr_mux_d/hwrite}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hsel}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hwrite}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/haddr_mux_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hwdata_mux_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hready}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/addr_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hwdata_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hwrite_out}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/dout}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/addr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/slv_sel_in}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/din}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/wr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/hbusreq_in}} 
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant1}} {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hmaster}} 
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hwrite}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/haddr_mux_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hwdata_mux_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hrdata}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hready}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hresp}} 
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hsel}} 
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hrdata_in}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/haddr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hwdata}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/waddr}} 
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/error}} 
+relaunch_sim
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/addr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/slv_sel_in}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/din}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/wr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/hbusreq_in}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hready}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hsel}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/waddr}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/error}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/haddr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hwdata}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/haddr_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hwdata_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hwrite_out}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hrdata}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hready}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_decoder_d/hsel1}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/slv_sel_out}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/slv_sel_in}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/slv_sel_out}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_decoder_d/slv_sel_out1}} 
+relaunch_sim
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 4}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/slv_sel_in}} 
+current_wave_config {Untitled 4}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/slv_sel_out}} 
+current_wave_config {Untitled 4}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_decoder_d/slv_sel_out1}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hsel}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hwdata}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hwrite}} 
+relaunch_sim
+current_wave_config {Untitled 4}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hwdata}} 
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 5}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/error}} 
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 6}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/waddr}} 
+relaunch_sim
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 10}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_decoder_d/hsel1}} 
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 12}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/haddr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hwrite}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hwdata}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hsel}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/waddr}} {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/raddr}} 
+current_wave_config {Untitled 12}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/memory}} 
+relaunch_sim
+close_sim

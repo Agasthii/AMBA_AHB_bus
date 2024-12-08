@@ -3,17 +3,17 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Dec  9 02:20:45 2024
-# Process ID: 8816
+# Start of session at: Fri Dec  6 11:09:03 2024
+# Process ID: 9772
 # Current directory: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24156 C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\AHB.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17440 C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\AHB.xpr
 # Log file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/vivado.log
 # Journal file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB\vivado.jou
 # Running On: LAPTOP-CPUREE27, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16788 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.xpr
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WWARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
@@ -71,14 +71,11 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not availableIINFO: [Project 1-313] Project file moved from 'E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB' since last save.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1482.977 ; gain = 373.430
-update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 02:21:25 2024...
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.oopen_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1474.070 ; gain = 353.816uupdate_compile_order -fileset sources_1eexit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 11:09:35 2024...

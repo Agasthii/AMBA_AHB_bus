@@ -26,6 +26,7 @@ module AHB_slave(
     //from slave module
     input split_in,
     input error,
+    input hready_in,
     input valid_aft_split_in,
     input [31:0] hrdata_in,   //data to the slave interface from the slave
     
@@ -56,10 +57,11 @@ module AHB_slave(
     reg temp_hwrite;
     always @(posedge hclk)
     begin
+        hready<= hready_in;
         if (!hresetn)
         begin
         hrdata <= 32'b0;
-        hready <= 1'b0;
+        hready <= 1'b1;
         hresp <= 2'b00;
         haddr_out <= 32'b0;
         hwdata_out <= 32'b0;
@@ -78,12 +80,12 @@ module AHB_slave(
             hresp <=2'b10;
             hsplit <= 1'b1; 
             end
-            if (error)
+            else if (error)
             begin 
             hresp <= 2'b10;
             hready <= 1'b1;
             end
-            if (temp_hwrite)
+            else if (temp_hwrite)
             begin
                 haddr_out <= haddr;
                 hwdata_out <= temp_hwdata;

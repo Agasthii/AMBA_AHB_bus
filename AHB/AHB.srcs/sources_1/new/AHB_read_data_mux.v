@@ -62,7 +62,7 @@ module AHB_read_data_mux #(
                     read_mux_out = slv3;
                     hready_mux_out = red3;
                 end
-                slave3:
+                slave4:
                 begin
                     read_mux_out = slv4;
                     hready_mux_out = red4;

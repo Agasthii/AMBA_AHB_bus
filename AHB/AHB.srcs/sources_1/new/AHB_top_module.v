@@ -90,6 +90,9 @@ module AHB_top_module(
     wire [31:0] haddr3;
     
     wire [1:0] hmaster;
+    wire [1:0] slv_sel_out1;
+    wire [1:0] slv_sel_out2;
+    wire [1:0] slv_sel_out3;
     
     wire [31:0] hrdata_mux_out;
     

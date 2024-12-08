@@ -50,6 +50,7 @@ module AHB_master1_top(
     
     wire [31:0] dout;  //data out of the master interface to the master
     
+    
     AHB_master_module AHB_master1_module_d(
         .hclk(hclk),
         .hresetn(hresetn),   
@@ -59,6 +60,7 @@ module AHB_master1_top(
         .wr(wr),
         .enable(enable),
         .hbusreq_in(hbusreq),
+  
    
         .dout(dout)
         );

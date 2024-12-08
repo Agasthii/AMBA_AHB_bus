@@ -5,13 +5,36 @@ Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3180] cannot find port 'din' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:56]
-ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:55]
-ERROR: [VRFC 10-3180] cannot find port 'hwrite_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:54]
-ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:53]
-ERROR: [VRFC 10-3180] cannot find port 'hwdata_mux_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:73]
-ERROR: [VRFC 10-3180] cannot find port 'haddr_mux_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:72]
-ERROR: [VRFC 10-3180] cannot find port 'dout' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:70]
-ERROR: [VRFC 10-3180] cannot find port 'addr_out' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:68]
-ERROR: [VRFC 10-3180] cannot find port 'din' on this module [E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:62]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:80]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:52]
+WARNING: [VRFC 10-5021] port 'valid_aft_split_in' is not connected on this instance [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:64]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:50]
+WARNING: [VRFC 10-5021] port 'valid_aft_split_in' is not connected on this instance [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:59]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:75]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:50]
+WARNING: [VRFC 10-5021] port 'valid_aft_split_in' is not connected on this instance [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:59]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:75]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AHB_master_module
+Compiling module xil_defaultlib.AHB_master
+Compiling module xil_defaultlib.AHB_master1_top
+Compiling module xil_defaultlib.AHB_master2_module
+Compiling module xil_defaultlib.AHB_master2_top
+Compiling module xil_defaultlib.AHB_master3_interface
+Compiling module xil_defaultlib.AHB_arbiter
+Compiling module xil_defaultlib.AHB_decoder
+Compiling module xil_defaultlib.AHB_addr_mux
+Compiling module xil_defaultlib.AHB_write_data_mux
+Compiling module xil_defaultlib.AHB_read_data_mux
+Compiling module xil_defaultlib.AHB_slave_module
+Compiling module xil_defaultlib.AHB_slave
+Compiling module xil_defaultlib.AHB_slave1_top
+Compiling module xil_defaultlib.AHB_slave2_top
+Compiling module xil_defaultlib.AHB_slave3_top
+Compiling module xil_defaultlib.AHB_top_module
+Compiling module xil_defaultlib.AHB_master_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AHB_master_tb_behav

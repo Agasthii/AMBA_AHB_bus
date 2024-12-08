@@ -69,7 +69,7 @@ module AHB_master_module(
                 end
                 3'b001:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd10;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
                     wr <= 1'b0;
