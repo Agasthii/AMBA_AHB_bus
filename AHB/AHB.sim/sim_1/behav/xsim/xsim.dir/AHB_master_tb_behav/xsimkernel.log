@@ -1,6 +1,6 @@
-Running: xsim.dir/AHB_master_tb_behav/xsimk.exe -simmode gui -wdb AHB_master_tb_behav.wdb -simrunnum 0 -socket 61501
+Running: xsim.dir/AHB_master_tb_behav/xsimk.exe -simmode gui -wdb AHB_master_tb_behav.wdb -simrunnum 0 -socket 62466
 Design successfully loaded
-Design Loading Memory Usage: 8200 KB (Peak: 8200 KB)
+Design Loading Memory Usage: 8268 KB (Peak: 8268 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
 Simulation Memory Usage: 8912 KB (Peak: 8912 KB)

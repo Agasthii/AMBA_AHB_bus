@@ -52,6 +52,8 @@ module AHB_slave_module(
     
     always @(posedge hclk)
         begin
+            waddr <= haddr[4:0];
+            raddr<=haddr[4:0];
             present_state <= next_state;
             split_in <= 1'b0;
             valid_aft_split_in <= 1'b0;
@@ -79,13 +81,12 @@ module AHB_slave_module(
                         end
                         
                     read: begin
-                            raddr <= haddr[4:0];
                             hrdata <= memory[raddr] ;
                             next_state <= idle;  
                         end
                     
                     write : begin
-                            waddr <= haddr[4:0];
+                            
                             next_state <= validity;  
                             end
                     validity: 

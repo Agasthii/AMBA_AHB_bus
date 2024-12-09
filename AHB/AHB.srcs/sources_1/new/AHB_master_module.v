@@ -60,48 +60,48 @@ module AHB_master_module(
             case (counter_id)
                 3'b000:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd8;
                     slv_sel_in <= 2'b00;
-                    din <= 32'd1;
+                    din <= 32'd5;
                     wr <= 1'b1;
                     hbusreq_in <= 1'b1;
                     enable <= 1'b1;
                 end
                 3'b001:
                 begin
-                    addr <= 32'd10;
+                    addr <= 32'd9;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
-                    wr <= 1'b0;
+                    din <= 32'd3;
+                    wr <= 1'b1;
                     hbusreq_in <= 1'b1;
                     enable <= 1'b1;
                 end
                 3'b010:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd10;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
+                    din <= 32'd3;
                     wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b011:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd11;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
+                    din <= 32'd4;
                     wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b100:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd12;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
+                    din <= 32'd5;
                     wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b101:
                 begin
