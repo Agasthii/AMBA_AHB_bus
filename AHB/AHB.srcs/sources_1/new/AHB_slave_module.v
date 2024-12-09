@@ -52,6 +52,14 @@ module AHB_slave_module(
     
     always @(posedge hclk)
         begin
+        
+            // Initialize memory during reset
+            memory[0] <= 32'd1;
+            memory[1] <= 32'd2;
+            memory[2] <= 32'd3;
+            memory[3] <= 32'd4;
+            memory[4] <= 32'd5;
+            
             waddr <= haddr[4:0];
             raddr<=haddr[4:0];
             present_state <= next_state;
