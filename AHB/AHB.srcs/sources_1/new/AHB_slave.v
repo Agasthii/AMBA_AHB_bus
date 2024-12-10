@@ -94,9 +94,9 @@ module AHB_slave(
                 
             end
             
-            else
+            else if (!hwrite)
             begin
-                
+                hrdata <= hrdata_in;    
 
             end
         end

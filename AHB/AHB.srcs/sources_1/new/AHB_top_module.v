@@ -34,7 +34,8 @@ module AHB_top_module(
     output [31:0] ext_mast_dout,
     output [31:0] ext_addr_out,
     output [31:0] ext_slave_dout,
-    output ext_hwrite_out
+    output ext_hwrite_out,
+    output [7:0] hread_data
     );
     
     wire hbusreq1;
@@ -97,7 +98,7 @@ module AHB_top_module(
     wire [31:0] hrdata_mux_out;
     
 //    wire hmastlock;
-    
+    assign hread_data = hrdata1;
     AHB_master1_top AHB_master1_top_d(
         .hclk(hclk),
         .hresetn(hresetn),

@@ -35,7 +35,7 @@ module AHB_master2_module(
     
     reg [1:0] counter;
     reg [2:0] counter_id;
-
+    
     always@(posedge hclk) begin
         if (!hresetn) begin
             addr <= 32'b0;
@@ -46,99 +46,101 @@ module AHB_master2_module(
             enable <= 1'b0;
             counter <= 2'b0;
             counter_id <= 3'b0;
-        end /* else begin
+        end else begin
             if (counter_id == 3'b111 && counter == 2'b11) begin
                 counter_id <= 3'b0;
                 counter <= 2'b0;
             end else begin
                 counter <= counter + 1;
-                if (counter == 2'b11)
+                if (counter == 2'b11) begin
                     counter_id <= counter_id + 1;
+                end
             end
-              
+                
             case (counter_id)
                 3'b000:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd06;
                     slv_sel_in <= 2'b00;
-                    din <= 32'd1;
+                    din <= 32'd6;
                     wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
+                    hbusreq_in <= 1'b1;
                     enable <= 1'b0;
                 end
                 3'b001:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd7;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
-                    wr <= 1'b0;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    din <= 32'd7;
+                    wr <= 1'b1;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b010:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd8;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
+                    din <= 32'd8;
                     wr <= 1'b1;
                     hbusreq_in <= 1'b1;
                     enable <= 1'b1;
                 end
                 3'b011:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd9;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
+                    din <= 32'd9;
                     wr <= 1'b1;
                     hbusreq_in <= 1'b1;
                     enable <= 1'b1;
                 end
                 3'b100:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd10;
                     slv_sel_in <= 2'b00;
-                    din <= 32'b0;
+                    din <= 32'd10;
                     wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b101:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd7;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    wr <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b110:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd8;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    wr <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b111:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd9;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    wr <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
+                    
                 end
                 default:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'b1;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b1;
+                    wr <= 1'b0;
                     hbusreq_in <= 1'b0;
                     enable <= 1'b0;
                 end
             endcase
-        end*/
+        end
     end
 endmodule
