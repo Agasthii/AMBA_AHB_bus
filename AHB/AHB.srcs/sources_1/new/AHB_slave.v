@@ -58,6 +58,10 @@ module AHB_slave(
     always @(posedge hclk)
     begin
         hready<= hready_in;
+        haddr_out <= haddr;
+        temp_hwdata <= hwdata;
+        haddr_out <= haddr;
+        temp_hwrite <= hwrite;
         if (!hresetn)
         begin
         hrdata <= 32'b0;
@@ -70,8 +74,9 @@ module AHB_slave(
         
         else 
         begin
-        temp_hwdata <= hwdata;
-        temp_hwrite <= hwrite;
+        
+        
+        hwrite_out <= hwrite;
         if (hsel)
         begin
             if (split_in)
@@ -87,15 +92,15 @@ module AHB_slave(
             end
             else if (temp_hwrite)
             begin
-                haddr_out <= haddr;
+               
                 hwdata_out <= temp_hwdata;
                 hrdata <= 32'b0;
-                hwrite_out <= temp_hwrite;
+                
             end
             
             else
             begin
-                haddr_out <= haddr;
+                
                 hrdata <= hrdata_in;
                 hwrite_out <= hwrite; 
             end

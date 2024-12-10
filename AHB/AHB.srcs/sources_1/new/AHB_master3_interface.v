@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module AHB_master3_interface #(
     parameter busy = 2'b01,
     parameter nonseq = 2'b10,
@@ -80,7 +79,7 @@ module AHB_master3_interface #(
             slv_sel_out <= 2'b0;
             dout <= 32'b0;
 //            hbusreq <= 1'b0;
-        end else begin
+        end /*else begin
     
             case (present_state)
                 idle:
@@ -177,6 +176,6 @@ module AHB_master3_interface #(
                         next_state <= wait_phase;
                 end
             endcase
-        end
+        end*/
     end
 endmodule

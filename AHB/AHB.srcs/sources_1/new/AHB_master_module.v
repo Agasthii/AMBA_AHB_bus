@@ -105,7 +105,7 @@ module AHB_master_module(
                 end
                 3'b101:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd7;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
                     wr <= 1'b0;
@@ -114,21 +114,22 @@ module AHB_master_module(
                 end
                 3'b110:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd8;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    wr <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
                 end
                 3'b111:
                 begin
-                    addr <= 32'b0;
+                    addr <= 32'd0;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b1;
-                    hbusreq_in <= 1'b0;
-                    enable <= 1'b0;
+                    wr <= 1'b0;
+                    hbusreq_in <= 1'b1;
+                    enable <= 1'b1;
+                    
                 end
                 default:
                 begin

@@ -1,0 +1,10 @@
+srcscan starts
+srcscan: Caught exception in shared_memory linking
+srcscan exits with return value -1
+t on client versions of Windows
+#
+# An error report file with more information is saved as:
+# C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\hs_err_pid4760.log
+srcscan starts
+srcscan: Caught exception in shared_memory linking
+srcscan exits with return value -1

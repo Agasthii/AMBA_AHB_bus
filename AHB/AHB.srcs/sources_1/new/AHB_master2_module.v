@@ -46,7 +46,7 @@ module AHB_master2_module(
             enable <= 1'b0;
             counter <= 2'b0;
             counter_id <= 3'b0;
-        end else begin
+        end /* else begin
             if (counter_id == 3'b111 && counter == 2'b11) begin
                 counter_id <= 3'b0;
                 counter <= 2'b0;
@@ -139,6 +139,6 @@ module AHB_master2_module(
                     enable <= 1'b0;
                 end
             endcase
-        end
+        end*/
     end
 endmodule

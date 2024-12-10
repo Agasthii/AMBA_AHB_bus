@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Dec  9 02:20:45 2024
-# Process ID: 8816
+# Start of session at: Mon Dec  9 12:47:44 2024
+# Process ID: 22800
 # Current directory: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24156 C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\AHB.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16236 C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\AHB.xpr
 # Log file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/vivado.log
 # Journal file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB\vivado.jou
 # Running On: LAPTOP-CPUREE27, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16788 MB
@@ -78,7 +78,12 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1482.977 ; gain = 373.430
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:32 . Memory (MB): peak = 1473.078 ; gain = 226.621
 update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim/simulate.log"
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 02:21:25 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 12:49:56 2024...

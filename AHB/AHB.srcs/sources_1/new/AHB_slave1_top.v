@@ -48,6 +48,7 @@ module AHB_slave1_top(
     wire hwrite_out;
     wire error;
     wire hready_connect;
+    wire split_connect;
     
     AHB_slave_module AHB_slave1_module_d(
         .hclk(hclk),
@@ -58,7 +59,8 @@ module AHB_slave1_top(
         .hrdata(hrdata_connect),
         .error(error),
         .hready_out(hready_connect),
-        .hsel(hsel)
+        .hsel(hsel),
+        .split_in(split_connect)
         );
     
     AHB_slave AHB_slave1_interface_d(
@@ -77,7 +79,7 @@ module AHB_slave1_top(
         .hwdata_out(hwdata_out), 
         .hready(hready),    
         .hresp(hresp),  
-        .hsplit(hsplit),
+        .hsplit(split_connect),
         .hwdata(hwdata_mux_out),
         .hrdata(hrdata),
         .error(error),

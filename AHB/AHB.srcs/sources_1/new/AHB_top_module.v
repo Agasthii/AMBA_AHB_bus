@@ -159,7 +159,7 @@ module AHB_top_module(
         .hresetn(hresetn),
         .hbusreq1(hbusreq1),
         .hbusreq2(hbusreq2),
-        .hbusreq3(ext_hbusreq_in),
+        //.hbusreq3(ext_hbusreq_in),
         .htrans1(htrans1),
         .htrans2(htrans2),
         .htrans3(htrans3),

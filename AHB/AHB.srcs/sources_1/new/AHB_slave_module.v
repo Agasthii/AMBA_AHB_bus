@@ -78,8 +78,8 @@ module AHB_slave_module(
                 case(present_state)
                     idle:begin
                         hready_out <= 1'b1;
-                        waddr <= 5'b0;
-                        raddr <= 5'b0;
+                        /*waddr <= 5'b0;
+                        raddr <= 5'b0;*/
                         if (hwrite && hsel)
                         begin 
                             next_state<= write;
@@ -90,23 +90,27 @@ module AHB_slave_module(
                         
                     read: begin
                             hrdata <= memory[raddr] ;
-                            next_state <= idle;  
+                            if (hwrite || ~hsel) 
+                                begin
+                                next_state <= idle;  
+                                end
                         end
                     
-                    write : begin
-                            
-                            next_state <= validity;  
-                            end
-                    validity: 
+                  
+                    write: 
                             begin 
                                 if (waddr < 5'd4)
                                 begin
                                     error<=1'b1;
+                                    next_state <= idle;
                                 end
                                 else
                                 begin 
                                     memory[waddr] <= hwdata;
                                     error <= 1'b0;
+                                    if  (~hsel || ~hwrite)
+                                        begin next_state<=idle;
+                                        end
                                 end
                                     
                             end    

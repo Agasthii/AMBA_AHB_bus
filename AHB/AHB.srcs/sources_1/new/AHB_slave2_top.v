@@ -47,7 +47,7 @@ module AHB_slave2_top(
     wire [31:0] hwdata_out;
     wire hwrite_out;
     
-    AHB_slave_module AHB_slave1_module_d(
+    AHB_slave_module AHB_slave2_module_d(
         .hclk(hclk),
         .hresetn(hresetn),
         .haddr(addr_out),
@@ -56,7 +56,7 @@ module AHB_slave2_top(
         .hrdata(hrdata_connect)
         );
     
-    AHB_slave AHB_slave1_interface_d(
+    AHB_slave AHB_slave2_interface_d(
         .hclk(hclk),
         .hresetn(hresetn), 
         .hrdata_in(hrdata_connect),

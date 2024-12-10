@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Dec  9 10:23:35 2024
-# Process ID: 5368
+# Start of session at: Mon Dec  9 21:45:11 2024
+# Process ID: 11560
 # Current directory: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22232 C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\AHB.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4484 C:\Users\User\Documents\AHB_final_final\AMBA_AHB_bus\AHB\AHB.xpr
 # Log file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB/vivado.log
 # Journal file: C:/Users/User/Documents/AHB_final_final/AMBA_AHB_bus/AHB\vivado.jou
 # Running On: LAPTOP-CPUREE27, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16788 MB
@@ -17,8 +17,17 @@ update_compile_order -fileset sources_1
 launch_simulation
 source AHB_master_tb.tcl
 current_wave_config {Untitled 1}
-add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/memory}} 
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hrdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hrdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hwrite}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hsel}} 
 relaunch_sim
 current_wave_config {Untitled 1}
-add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/memory}} 
-close_sim
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_addr_mux_d/addr_mux_out}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/wr}} 
+relaunch_sim
