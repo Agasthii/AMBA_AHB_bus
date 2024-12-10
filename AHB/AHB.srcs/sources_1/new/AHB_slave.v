@@ -85,11 +85,6 @@ module AHB_slave(
             hresp <=2'b10;
             hsplit <= 1'b1; 
             end
-            else if (error)
-            begin 
-            hresp <= 2'b10;
-            hready <= 1'b1;
-            end
             else if (temp_hwrite)
             begin
                
