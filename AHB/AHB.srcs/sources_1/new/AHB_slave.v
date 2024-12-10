@@ -45,7 +45,7 @@ module AHB_slave(
     //to slave module
     output reg [31:0] haddr_out,
     output reg [31:0] hwdata_out,
-    output reg hwrite_out,
+    output  hwrite_out,
     //to master
     output reg [31:0] hrdata,    //data from slave to master
     output reg hready,    //high -> transfer finished, low -> extend the transfer
@@ -55,13 +55,14 @@ module AHB_slave(
     );
     reg [31:0]temp_hwdata; //register to store hwdata for busy situation
     reg temp_hwrite;
+    assign hwrite_out=hwrite;
     always @(posedge hclk)
     begin
         hready<= hready_in;
         haddr_out <= haddr;
         temp_hwdata <= hwdata;
         haddr_out <= haddr;
-        temp_hwrite <= hwrite;
+        
         if (!hresetn)
         begin
         hrdata <= 32'b0;
@@ -69,14 +70,14 @@ module AHB_slave(
         hresp <= 2'b00;
         haddr_out <= 32'b0;
         hwdata_out <= 32'b0;
-        hwrite_out <= 1'b0;
+    
         end
         
         else 
         begin
         
         
-        hwrite_out <= hwrite;
+        
         if (hsel)
         begin
             if (split_in)
@@ -85,7 +86,7 @@ module AHB_slave(
             hresp <=2'b10;
             hsplit <= 1'b1; 
             end
-            else if (temp_hwrite)
+            else if (hwrite)
             begin
                
                 hwdata_out <= temp_hwdata;
@@ -96,8 +97,7 @@ module AHB_slave(
             else
             begin
                 
-                hrdata <= hrdata_in;
-                hwrite_out <= hwrite; 
+
             end
         end
         
@@ -106,7 +106,7 @@ module AHB_slave(
             hrdata <= 32'b0; 
             haddr_out <= 32'b0;
             hwdata_out <= 32'b0;
-            hwrite_out <= hwrite;
+           
         end
         
     end
