@@ -49,7 +49,7 @@ module AHB_master3_interface #(
     //to slave
     output reg [31:0] haddr,    //32-bit system address bus
     output reg hwrite, //high -> write transfer, low -> read transfer (remains same during burst)
-    output reg [1:0] htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
+    output reg htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
     output reg [31:0] hwdata,    //write data
     //to master
     output reg [31:0] dout,  //data out of the master interface to the master

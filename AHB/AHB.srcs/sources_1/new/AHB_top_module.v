@@ -76,9 +76,9 @@ module AHB_top_module(
     wire hgrant2;
     wire hgrant3;
     
-    wire [1:0] htrans1;
-    wire [1:0] htrans2;
-    wire [1:0] htrans3;
+    wire htrans1;
+    wire htrans2;
+    wire htrans3;
     
     wire [1:0] slv_sel_out;
     
@@ -97,8 +97,38 @@ module AHB_top_module(
     
     wire [31:0] hrdata_mux_out;
     
-//    wire hmastlock;
+//    wire ext_addr_uart;
+//    wire ext_slv_sel_in_uart;
+//    wire ext_mast_din_uart;
+//    wire ext_wr_uart;
+//    wire ext_enable_uart;
+//    wire ext_hbusreq_in_uart;
+//    wire ext_slave_din_uart;
+    
+//    wire ext_mast_dout_uart;
+//    wire ext_addr_out_uart;
+//    wire ext_slave_dout_uart;
+//    wire ext_hwrite_out_uart;
+    
+    
+
     assign hread_data = hrdata1;
+    
+//    uart uart_inst(
+//        .ext_addr(ext_addr_uart),
+//        .ext_slv_sel_in(ext_slv_sel_in_uart),
+//        .ext_mast_din(ext_mast_din_uart),
+//        .ext_wr(ext_wr_uart),
+//        .ext_enable(ext_enable_uart),
+//        .ext_hbusreq_in(ext_hbusreq_in_uart),
+//        .ext_slave_din(ext_slave_din_uart),
+        
+//        .ext_mast_dout(ext_mast_dout_uart),
+//        .ext_addr_out(ext_addr_out_uart),
+//        .ext_slave_dout(ext_slave_dout_uart),
+//        .ext_hwrite_out(ext_hwrite_out_uart)
+//        );
+     
     AHB_master1_top AHB_master1_top_d(
         .hclk(hclk),
         .hresetn(hresetn),
@@ -160,7 +190,7 @@ module AHB_top_module(
         .hresetn(hresetn),
         .hbusreq1(hbusreq1),
         .hbusreq2(hbusreq2),
-        //.hbusreq3(ext_hbusreq_in),
+        .hbusreq3(ext_hbusreq_in),
         .htrans1(htrans1),
         .htrans2(htrans2),
         .htrans3(htrans3),
@@ -265,7 +295,7 @@ module AHB_top_module(
         .hsplit(hsplit3)
         );
     
-   /* AHB_slave4_interface AHB_slave4_interface_d(
+    AHB_slave4_interface AHB_slave4_interface_d(
         .hclk(hclk),
         .hresetn(hresetn),
         .din(ext_slave_din),
@@ -281,6 +311,5 @@ module AHB_top_module(
         .hresp(hresp),
         .hsplit(hsplit4)
         );
-        
-        */
+
 endmodule

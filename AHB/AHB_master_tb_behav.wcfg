@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AHB_master_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AHB_master_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="110.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="172"></NameColumnWidth>
+      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/AHB_master_tb/hclk" type="logic">
+      <obj_property name="ElementShortName">hclk</obj_property>
+      <obj_property name="ObjectShortName">hclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/hresetn" type="logic">
+      <obj_property name="ElementShortName">hresetn</obj_property>
+      <obj_property name="ObjectShortName">hresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_addr" type="array">
+      <obj_property name="ElementShortName">ext_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ext_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_slv_sel_in" type="array">
+      <obj_property name="ElementShortName">ext_slv_sel_in[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ext_slv_sel_in[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_mast_din" type="array">
+      <obj_property name="ElementShortName">ext_mast_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ext_mast_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_wr" type="logic">
+      <obj_property name="ElementShortName">ext_wr</obj_property>
+      <obj_property name="ObjectShortName">ext_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_enable" type="logic">
+      <obj_property name="ElementShortName">ext_enable</obj_property>
+      <obj_property name="ObjectShortName">ext_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_hbusreq_in" type="logic">
+      <obj_property name="ElementShortName">ext_hbusreq_in</obj_property>
+      <obj_property name="ObjectShortName">ext_hbusreq_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_slave_din" type="array">
+      <obj_property name="ElementShortName">ext_slave_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ext_slave_din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/ext_mast_dout" type="array">
+      <obj_property name="ElementShortName">ext_mast_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ext_mast_dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq1" type="logic">
+      <obj_property name="ElementShortName">hbusreq1</obj_property>
+      <obj_property name="ObjectShortName">hbusreq1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq2" type="logic">
+      <obj_property name="ElementShortName">hbusreq2</obj_property>
+      <obj_property name="ObjectShortName">hbusreq2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq3" type="logic">
+      <obj_property name="ElementShortName">hbusreq3</obj_property>
+      <obj_property name="ObjectShortName">hbusreq3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant1" type="logic">
+      <obj_property name="ElementShortName">hgrant1</obj_property>
+      <obj_property name="ObjectShortName">hgrant1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant2" type="logic">
+      <obj_property name="ElementShortName">hgrant2</obj_property>
+      <obj_property name="ObjectShortName">hgrant2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant3" type="logic">
+      <obj_property name="ElementShortName">hgrant3</obj_property>
+      <obj_property name="ObjectShortName">hgrant3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans1" type="logic">
+      <obj_property name="ElementShortName">htrans1</obj_property>
+      <obj_property name="ObjectShortName">htrans1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans2" type="logic">
+      <obj_property name="ElementShortName">htrans2</obj_property>
+      <obj_property name="ObjectShortName">htrans2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans3" type="logic">
+      <obj_property name="ElementShortName">htrans3</obj_property>
+      <obj_property name="ObjectShortName">htrans3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hmaster" type="array">
+      <obj_property name="ElementShortName">hmaster[1:0]</obj_property>
+      <obj_property name="ObjectShortName">hmaster[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/present_mast" type="array">
+      <obj_property name="ElementShortName">present_mast[1:0]</obj_property>
+      <obj_property name="ObjectShortName">present_mast[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/next_mast" type="array">
+      <obj_property name="ElementShortName">next_mast[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_mast[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/present_state" type="array">
+      <obj_property name="ElementShortName">present_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">present_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/mast_changed" type="logic">
+      <obj_property name="ElementShortName">mast_changed</obj_property>
+      <obj_property name="ObjectShortName">mast_changed</obj_property>
+   </wvobject>
+</wave_config>

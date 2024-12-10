@@ -36,7 +36,7 @@ module AHB_master2_top(
 //    output wire [2:0] hsize, //size of transfer -> byte, halfword, word
 //    output wire [2:0] hburst,    //single transfer, 4, 8, 16
 //    output wire [3:0] hprot, //opcode fetch or data access, privileged mode access or user mode access
-    output wire [1:0] htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
+    output wire htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
     output wire [31:0] hwdata,    //write data
     //to arbiter
     output wire hbusreq, //bus request to the arbiter

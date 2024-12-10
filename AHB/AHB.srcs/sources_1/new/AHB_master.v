@@ -21,9 +21,7 @@
 
 
 module AHB_master #(
-    parameter busy = 2'b01,
-    parameter nonseq = 2'b10,
-    parameter seq = 2'b11,
+    parameter busy = 1'b1,
     
     parameter idle = 3'b000,
     parameter req_phase = 3'b001,
@@ -50,7 +48,7 @@ module AHB_master #(
     //to slave
     output reg [31:0] haddr,    //32-bit system address bus
     output reg hwrite, //high -> write transfer, low -> read transfer (remains same during burst)
-    output reg [1:0] htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
+    output reg htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
     output reg [31:0] hwdata,    //write data
     //to master
     output reg [31:0] dout,  //data out of the master interface to the master
@@ -63,16 +61,16 @@ module AHB_master #(
     //parameters in state machine
     reg [2:0] present_state, next_state;
     
-    always@(posedge hclk) begin
-        if (!hresetn) begin
-            present_state <= idle;
-        end else
-            present_state <= next_state;
-    end
+//    always@(posedge hclk) begin
+//        if (!hresetn) begin
+//            present_state <= idle;
+//        end else
+//            present_state <= next_state;
+//    end
     
     always@(posedge hclk) begin
         if (!hresetn) begin
-            next_state <= idle;
+            present_state <= idle;
             haddr <= 32'b0;
             hwrite <= 1'b0;
             htrans <= idle;
@@ -94,37 +92,40 @@ module AHB_master #(
 //                    hbusreq <= hbusreq_in;
     //                hlock <= 1'b0;
                     if (!enable)
-                        next_state <= idle;
+                        present_state <= idle;
                     else if (hbusreq_in)
-                        next_state <= req_phase;
+                        present_state <= req_phase;
                     else
-                        next_state <= idle;
+                        present_state <= idle;
                 end
                     
                 req_phase:
                 begin
                     haddr <= addr;
                     hwrite <= wr;
-                    htrans <= idle;
                     hwdata <= din;
                     slv_sel_out <= slv_sel_in;
                     dout <= hrdata;
 //                    hbusreq <= hbusreq_in;
     //                hlock <= 1'b1;
                     
-                    if (!enable)
-                        next_state <= idle;
-                    else if (hgrant)  //if  grant is given master will access the bus
-                        next_state <= addr_phase;
-                    else
-                        next_state <= req_phase;
+                    if (!enable) begin
+                        present_state <= idle;
+                        htrans <= idle;
+                    end else if (hgrant) begin  //if  grant is given master will access the bus
+                        present_state <= addr_phase;
+                        htrans <= busy;
+                    end else begin
+                        present_state <= req_phase;
+                        htrans <= idle;
+                    end
                 end
                 
                 addr_phase:
                 begin
                     haddr <= addr;
                     hwrite <= wr;
-                    htrans <= nonseq;
+                    htrans <= busy;
                     hwdata <= din;
                     slv_sel_out <= slv_sel_in;
                     dout <= hrdata;
@@ -132,18 +133,18 @@ module AHB_master #(
     //                hlock <= 1'b1;
                     
                     if (!enable)
-                        next_state <= idle;
+                        present_state <= idle;
                     else if (hready)
-                        next_state <= data_phase;
+                        present_state <= data_phase;
                     else
-                        next_state <= wait_phase;
+                        present_state <= wait_phase;
                 end
                 
                 data_phase:
                 begin
                     haddr <= addr;
                     hwrite <= wr;
-                    htrans <= seq;
+                    htrans <= busy;
                     hwdata <= din;
                     slv_sel_out <= slv_sel_in;
                     dout <= hrdata;
@@ -151,18 +152,18 @@ module AHB_master #(
     //                hlock <= 1'b1;
                     
                     if (!enable)
-                        next_state <= idle;
+                        present_state <= idle;
                     else if (hready && hgrant)
-                        next_state <= data_phase;
+                        present_state <= data_phase;
                     else
-                        next_state <= wait_phase;
+                        present_state <= wait_phase;
                 end
                 
                 wait_phase:
                 begin
                     haddr <= haddr;
                     hwrite <= hwrite;
-                    htrans <= busy;
+                    htrans <= idle;
                     hwdata <= hwdata;
                     slv_sel_out <= slv_sel_out;
                     dout <= dout;
@@ -170,11 +171,11 @@ module AHB_master #(
     //                hlock <= 1'b1;
                     
                     if (!enable)
-                        next_state <= idle;
+                        present_state <= idle;
                     else if (hready && hgrant)
-                        next_state <= data_phase;
+                        present_state <= data_phase;
                     else
-                        next_state <= wait_phase;
+                        present_state <= wait_phase;
                 end
             endcase
         end

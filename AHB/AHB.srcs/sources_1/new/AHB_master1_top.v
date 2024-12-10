@@ -33,7 +33,7 @@ module AHB_master1_top(
     //to slave
     output wire [31:0] haddr,    //32-bit system address bus
     output wire hwrite, //high -> write transfer, low -> read transfer (remains same during burst)
-    output wire [1:0] htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
+    output wire htrans,    //type of current transfer -> IDLE, BUSY, NONSEQ, SEQ
     output wire [31:0] hwdata,    //write data
     //to arbiter
     output wire hbusreq, //bus request to the arbiter

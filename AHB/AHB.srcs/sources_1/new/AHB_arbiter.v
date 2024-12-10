@@ -31,9 +31,9 @@ module AHB_arbiter #(
     input hbusreq1,
     input hbusreq2,
     input hbusreq3,
-    input [1:0] htrans1,
-    input [1:0] htrans2,
-    input [1:0] htrans3,
+    input htrans1,
+    input htrans2,
+    input htrans3,
     //from slave
     input [15:0] hsplit1,
     input [15:0] hsplit2,
@@ -49,6 +49,11 @@ module AHB_arbiter #(
     );
     
     reg [1:0] present_mast, next_mast;
+    reg mast_changed;
+    
+//    always@(next_mast) begin
+//        present_mast <= next_mast;
+//    end
     
     always@(posedge hclk) begin
         if (!hresetn) begin
@@ -58,45 +63,51 @@ module AHB_arbiter #(
             hgrant2 <= 1'b0;
             hgrant3 <= 1'b0;
             hmaster <= 2'b00;
+            mast_changed <= 1'b0;
         end else begin
-            present_mast <= next_mast;
+//            present_mast <= next_mast;
             case (present_mast)
                 mast1:
                 begin
                     if (!hbusreq2 && !hbusreq3) begin
-                        next_mast <= mast1;
+                        present_mast <= mast1;
                         hgrant1 <= 1'b1;
                         hgrant2 <= 1'b0;
                         hgrant3 <= 1'b0;
                         hmaster <= 2'b00;
+                        mast_changed <= 1'b0;
                     end else begin
                         if (!hbusreq2 && hbusreq3)begin
-                            if (htrans1 == 2'b00) begin
-                                next_mast <= mast3;
+                            if (htrans1 == 1'b0 && mast_changed == 1'b0) begin
+                                present_mast <= mast3;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b1;
                                 hmaster <= 2'b10;
+                                mast_changed <= 1'b1;
                             end else begin
-                                next_mast <= mast1;
+                                present_mast <= mast1;
                                 hgrant1 <= 1'b1;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b00;
+                                mast_changed <= 1'b0;
                             end
                         end else begin
-                            if (htrans1 == 2'b00) begin
-                                next_mast <= mast2;
+                            if (htrans1 == 1'b0 && mast_changed == 1'b0) begin
+                                present_mast <= mast2;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b1;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b01;
+                                mast_changed <= 1'b1;
                             end else begin
-                                next_mast <= mast1;
+                                present_mast <= mast1;
                                 hgrant1 <= 1'b1;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b00;
+                                mast_changed <= 1'b0;
                             end
                         end
                     end
@@ -105,39 +116,44 @@ module AHB_arbiter #(
                 mast2:
                 begin
                     if (!hbusreq1 && !hbusreq3) begin
-                        next_mast <= mast2;
+                        present_mast <= mast2;
                         hgrant1 <= 1'b0;
                         hgrant2 <= 1'b1;
                         hgrant3 <= 1'b0;
                         hmaster <= 2'b01;
+                        mast_changed <= 1'b0;
                     end else begin
                         if (!hbusreq1 && hbusreq3)begin
-                            if (htrans2 == 2'b00) begin
-                                next_mast <= mast3;
+                            if (htrans2 == 1'b0 && mast_changed == 1'b0) begin
+                                present_mast <= mast3;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b1;
                                 hmaster <= 2'b10;
+                                mast_changed <= 1'b1;
                             end else begin
-                                next_mast <= mast2;
+                                present_mast <= mast2;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b1;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b01;
+                                mast_changed <= 1'b0;
                             end
                         end else begin
-                            if (htrans2 == 2'b00) begin
-                                next_mast <= mast1;
+                            if (htrans2 == 1'b0 && mast_changed == 1'b0) begin
+                                present_mast <= mast1;
                                 hgrant1 <= 1'b1;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b00;
+                                mast_changed <= 1'b1;
                             end else begin
-                                next_mast <= mast2;
+                                present_mast <= mast2;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b1;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b01;
+                                mast_changed <= 1'b0;
                             end
                         end
                     end
@@ -146,39 +162,44 @@ module AHB_arbiter #(
                 mast3:
                 begin
                     if (!hbusreq1 && !hbusreq2) begin
-                        next_mast <= mast3;
+                        present_mast <= mast3;
                         hgrant1 <= 1'b0;
                         hgrant2 <= 1'b0;
                         hgrant3 <= 1'b1;
                         hmaster <= 2'b10;
+                        mast_changed <= 1'b0;
                     end else begin
                         if (!hbusreq1 && hbusreq2)begin
-                            if (htrans3 == 2'b00) begin
-                                next_mast <= mast2;
+                            if (htrans3 == 1'b0 && mast_changed == 1'b0) begin
+                                present_mast <= mast2;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b1;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b01;
+                                mast_changed <= 1'b1;
                             end else begin
-                                next_mast <= mast3;
+                                present_mast <= mast3;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b1;
                                 hmaster <= 2'b10;
+                                mast_changed <= 1'b0;
                             end
                         end else begin
-                            if (htrans3 == 2'b00) begin
-                                next_mast <= mast1;
+                            if (htrans3 == 2'b00 && mast_changed == 1'b0) begin
+                                present_mast <= mast1;
                                 hgrant1 <= 1'b1;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b00;
+                                mast_changed <= 1'b1;
                             end else begin
-                                next_mast <= mast3;
+                                present_mast <= mast3;
                                 hgrant1 <= 1'b0;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b1;
                                 hmaster <= 2'b10;
+                                mast_changed <= 1'b0;
                             end
                         end
                     end
@@ -186,11 +207,12 @@ module AHB_arbiter #(
                 
                 default:
                 begin
-                    next_mast <= mast1;
+                    present_mast <= mast1;
                     hgrant1 <= 1'b1;
                     hgrant2 <= 1'b0;
                     hgrant3 <= 1'b0;
                     hmaster <= 2'b00;
+                    mast_changed <= 1'b0;
                 end
             endcase
         end
