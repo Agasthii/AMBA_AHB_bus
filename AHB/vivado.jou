@@ -13,3 +13,67 @@
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/User/Documents/AMBA Real Final/AMBA_AHB_bus/AHB/AHB.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/hrdata}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/hrdata}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_module_d/raddr}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_read_data_mux_d}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hrdata_in}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hrdata}} 
+current_wave_config {Untitled 1}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/hrdata_connect}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hrdata}} 
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hrdata_in}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave1_top/AHB_slave1_interface_d/hwrite}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_read_data_mux_d/slv1}} 
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_read_data_mux_d/read_mux_out}} 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/hrdata}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source AHB_master_tb.tcl
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq1}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq2}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant1}} 
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant2}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/next_mast}} 
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/present_mast}} 
+relaunch_sim
+close_sim
