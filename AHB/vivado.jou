@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Dec 11 07:44:55 2024
+# Process ID: 3000
+# Current directory: E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4404 E:\1.Studies\Semester 07\Advanced Digital Systems\Assignment Dr\AMBA_AHB_bus\AHB\AHB.xpr
+# Log file: E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/vivado.log
+# Journal file: E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB\vivado.jou
+# Running On: AG, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16901 MB
+#-----------------------------------------------------------
+start_gui
+open_project {E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB_master_tb_behav.wcfg}
+source AHB_master_tb.tcl
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_interface_d/present_state}} 
+relaunch_sim
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_module_d/enable}} 
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_module_d/counter_id}} 
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_module_d/counter}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/counter_id}} 
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_module_d/counter_id}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB_master_tb_behav.wcfg}
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/enable}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master3_interface_d/hbusreq_in}} 
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hbusreq3}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/present_state}} 
+relaunch_sim
+save_wave_config {E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB_master_tb_behav.wcfg}
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_interface_d/present_state}} 
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/mast_changed}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {AHB_master_tb_behav.wcfg}
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hsplit2}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {E:/1.Studies/Semester 07/Advanced Digital Systems/Assignment Dr/AMBA_AHB_bus/AHB/AHB_master_tb_behav.wcfg}
