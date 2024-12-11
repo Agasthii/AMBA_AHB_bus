@@ -13,11 +13,11 @@
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
       <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
-      <Cursor1Time time="110.000 ns"></Cursor1Time>
+      <Cursor1Time time="470.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="172"></NameColumnWidth>
-      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+      <ValueColumnWidth column_width="93"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="24" />
    <wvobject fp_name="/AHB_master_tb/hclk" type="logic">
@@ -80,10 +80,6 @@
       <obj_property name="ElementShortName">hgrant2</obj_property>
       <obj_property name="ObjectShortName">hgrant2</obj_property>
    </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hgrant3" type="logic">
-      <obj_property name="ElementShortName">hgrant3</obj_property>
-      <obj_property name="ObjectShortName">hgrant3</obj_property>
-   </wvobject>
    <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans1" type="logic">
       <obj_property name="ElementShortName">htrans1</obj_property>
       <obj_property name="ObjectShortName">htrans1</obj_property>
@@ -92,28 +88,32 @@
       <obj_property name="ElementShortName">htrans2</obj_property>
       <obj_property name="ObjectShortName">htrans2</obj_property>
    </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/htrans3" type="logic">
-      <obj_property name="ElementShortName">htrans3</obj_property>
-      <obj_property name="ObjectShortName">htrans3</obj_property>
-   </wvobject>
    <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hmaster" type="array">
       <obj_property name="ElementShortName">hmaster[1:0]</obj_property>
       <obj_property name="ObjectShortName">hmaster[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/present_mast" type="array">
-      <obj_property name="ElementShortName">present_mast[1:0]</obj_property>
-      <obj_property name="ObjectShortName">present_mast[1:0]</obj_property>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_module_d/counter_id" type="array">
+      <obj_property name="ElementShortName">counter_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_id[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/next_mast" type="array">
-      <obj_property name="ElementShortName">next_mast[1:0]</obj_property>
-      <obj_property name="ObjectShortName">next_mast[1:0]</obj_property>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_module_d/counter_id" type="array">
+      <obj_property name="ElementShortName">counter_id[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_id[2:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/present_state" type="array">
+      <obj_property name="ElementShortName">present_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">present_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_interface_d/present_state" type="array">
       <obj_property name="ElementShortName">present_state[2:0]</obj_property>
       <obj_property name="ObjectShortName">present_state[2:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/mast_changed" type="logic">
       <obj_property name="ElementShortName">mast_changed</obj_property>
       <obj_property name="ObjectShortName">mast_changed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/hsplit2" type="logic">
+      <obj_property name="ElementShortName">hsplit2</obj_property>
+      <obj_property name="ObjectShortName">hsplit2</obj_property>
    </wvobject>
 </wave_config>

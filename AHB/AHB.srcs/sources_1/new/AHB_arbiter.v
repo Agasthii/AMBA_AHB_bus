@@ -51,6 +51,7 @@ module AHB_arbiter #(
     
     reg [1:0] present_mast, next_mast;
     reg mast_changed;
+    reg no_bus_req;
     
 //    always@(next_mast) begin
 //        present_mast <= next_mast;
@@ -65,6 +66,7 @@ module AHB_arbiter #(
             hgrant3 <= 1'b0;
             hmaster <= 2'b00;
             mast_changed <= 1'b0;
+            no_bus_req <= 0;
         end   
         else if (hsplit2)
         begin 
@@ -85,16 +87,29 @@ module AHB_arbiter #(
        
         end else begin
 //            present_mast <= next_mast;
+                
             case (present_mast)
                 mast1:
                 begin
-                    if (!hbusreq2 && !hbusreq3) begin
+                    if (!hbusreq1 && !hbusreq2 && !hbusreq3 && hgrant1) begin
                         present_mast <= mast1;
                         hgrant1 <= 1'b1;
                         hgrant2 <= 1'b0;
                         hgrant3 <= 1'b0;
                         hmaster <= 2'b00;
-                        mast_changed <= 1'b0;
+                        mast_changed <= 1'b1;
+                        no_bus_req <= 1;
+                    end else if (!hbusreq2 && !hbusreq3) begin
+                        present_mast <= mast1;
+                        hgrant1 <= 1'b1;
+                        hgrant2 <= 1'b0;
+                        hgrant3 <= 1'b0;
+                        hmaster <= 2'b00;
+                        if (no_bus_req)
+                            mast_changed <= 1'b1;
+                        else
+                            mast_changed <= 1'b0;
+                        no_bus_req <= 0;
                     end else begin
                         if (!hbusreq2 && hbusreq3)begin
                             if (htrans1 == 1'b0 && mast_changed == 1'b0) begin
@@ -103,14 +118,22 @@ module AHB_arbiter #(
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b1;
                                 hmaster <= 2'b10;
-                                mast_changed <= 1'b1;
+                                if (no_bus_req)
+                                    mast_changed <= 1'b1;
+                                else
+                                    mast_changed <= 1'b0;
+                                no_bus_req <= 0;
                             end else begin
                                 present_mast <= mast1;
                                 hgrant1 <= 1'b1;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b00;
-                                mast_changed <= 1'b0;
+                                if (no_bus_req)
+                                    mast_changed <= 1'b1;
+                                else
+                                    mast_changed <= 1'b0;
+                                no_bus_req <= 0;
                             end
                         end else begin
                             if (htrans1 == 1'b0 && mast_changed == 1'b0) begin
@@ -119,14 +142,22 @@ module AHB_arbiter #(
                                 hgrant2 <= 1'b1;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b01;
-                                mast_changed <= 1'b1;
+                                if (no_bus_req)
+                                    mast_changed <= 1'b1;
+                                else
+                                    mast_changed <= 1'b0;
+                                no_bus_req <= 0;
                             end else begin
                                 present_mast <= mast1;
                                 hgrant1 <= 1'b1;
                                 hgrant2 <= 1'b0;
                                 hgrant3 <= 1'b0;
                                 hmaster <= 2'b00;
-                                mast_changed <= 1'b0;
+                                if (no_bus_req)
+                                    mast_changed <= 1'b1;
+                                else
+                                    mast_changed <= 1'b0;
+                                no_bus_req <= 0;
                             end
                         end
                     end

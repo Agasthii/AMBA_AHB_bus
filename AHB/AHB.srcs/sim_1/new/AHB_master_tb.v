@@ -67,7 +67,7 @@ module AHB_master_tb();
         ext_enable = 1'b0;
         ext_hbusreq_in = 1'b0;
         ext_slave_din = 32'b0;
-        #400
+        #800
         
         hresetn = 1'b1;
         ext_addr = 32'b0;
