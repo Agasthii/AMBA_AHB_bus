@@ -26,7 +26,7 @@ module AHB_master2_top(
     //from slave
     input [31:0] hrdata,    //data from slave to master
     input hready,    //high -> transfer finished, low -> extend the transfer
-    input [1:0] hresp,    //00 -> OK, 01 -> ERROR, 10 -> RETRY, 11 -> SPLIT
+    input  hresp,    //00 -> OK, 01 -> ERROR, 10 -> RETRY, 11 -> SPLIT
     //from arbiter
     input hgrant,   //grant signal from arbiter
     
@@ -50,8 +50,8 @@ module AHB_master2_top(
     wire [31:0] din;   //data to the master interface from the master
     wire wr;   //from the master module to the master interface; high -> write transfer, low -> read transfer
     wire enable;   //enable the master interface. This is sent from the master
-//    wire hbusreq_in;   //bus request from the master module
-    
+//    wire hbu_connesreq_in;   //bus request from the master module
+    wire hresp_connect;
     wire [31:0] dout;  //data out of the master interface to the master
     
     AHB_master2_module AHB_master2_module_d(
@@ -61,6 +61,7 @@ module AHB_master2_top(
         .slv_sel_in(slv_sel_in),
         .din(din),
         .wr(wr),
+        .hresp(hresp_connect),
         .enable(enable),
         .hbusreq_in(hbusreq),
    
@@ -80,6 +81,7 @@ module AHB_master2_top(
         .enable(enable),
         .hbusreq_in(hbusreq),
         .hgrant(hgrant),
+        .hresp_out(hresp_connect),
    
         .haddr(haddr),
         .hwrite(hwrite),

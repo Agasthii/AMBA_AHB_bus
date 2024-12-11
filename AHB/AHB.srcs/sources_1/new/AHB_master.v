@@ -34,7 +34,7 @@ module AHB_master #(
     //from slave
     input [31:0] hrdata,    //data from slave to master
     input hready,    //high -> transfer finished, low -> extend the transfer
-    input [1:0] hresp,    //00 -> OK, 01 -> ERROR, 10 -> RETRY, 11 -> SPLIT
+    input hresp,    //00 -> OK, 01 -> ERROR, 10 -> RETRY, 11 -> SPLIT
     //from master module
     input [31:0] addr, //address from the master module
     input [1:0] slv_sel_in, //slave identifier given to the master interface
@@ -55,12 +55,13 @@ module AHB_master #(
     //to arbiter
 //    output reg hbusreq, //bus request to the arbiter
     // to decoder
+    output hresp_out,
     output reg [1:0] slv_sel_out    //slave identifier given out of the master interface
     );
     
     //parameters in state machine
     reg [2:0] present_state, next_state;
-    
+    assign hresp_out = hresp;
 //    always@(posedge hclk) begin
 //        if (!hresetn) begin
 //            present_state <= idle;
@@ -79,7 +80,7 @@ module AHB_master #(
             dout <= 32'b0;
 //            hbusreq <= 1'b0;
         end else begin
-    
+            
             case (present_state)
                 idle:
                 begin

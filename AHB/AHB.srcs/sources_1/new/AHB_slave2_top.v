@@ -39,7 +39,7 @@ module AHB_slave2_top(
     output wire hready,    //high -> transfer finished, low -> extend the transfer
     output wire [1:0] hresp,    //00 -> OK, 01 -> ERROR, 10 -> RETRY, 11 -> SPLIT
     //to arbiter
-    output wire [15:0] hsplit
+    output wire hsplit
     );
     
     wire [31:0] hrdata_connect;   //data to the slave interface from the slave
@@ -53,7 +53,8 @@ module AHB_slave2_top(
         .haddr(addr_out),
         .hwrite(hwrite_out),
         .hwdata(hwdata_out),
-        .hrdata(hrdata_connect)
+        .hrdata(hrdata_connect),
+        .split_in(split_connect)
         );
     
     AHB_slave AHB_slave2_interface_d(
@@ -61,7 +62,8 @@ module AHB_slave2_top(
         .hresetn(hresetn), 
         .hrdata_in(hrdata_connect),
         .hsel(hsel),
-        .hwrite(hwrite), 
+        .hwrite(hwrite),
+        .split_in(split_in), 
 //        .hsize(hsize),  
 //        .hburst(hburst),  
 //        .hprot(hprot), 

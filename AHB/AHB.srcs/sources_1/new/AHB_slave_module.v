@@ -44,7 +44,7 @@ module AHB_slave_module(
     
     reg [1:0] present_state;
     reg [1:0] next_state;
-    
+    reg [2:0] counter;
     parameter idle = 2'b00;
     parameter read   = 2'b01;
     parameter write   = 2'b10;
@@ -89,10 +89,22 @@ module AHB_slave_module(
                         end
                         
                     read: begin
-                            hrdata <= memory[raddr] ;
-                            if (hwrite || ~hsel) 
+                            
+                            if (counter != 3'b111)
+                                begin 
+                                    counter <= counter +1;
+                                    split_in <= 1'b1;
+                                end
+                            else
                                 begin
-                                next_state <= idle;  
+                                counter <= 3'd0;
+                                if (hwrite || ~hsel) 
+                                    begin
+                                    hrdata <= memory[raddr] ;
+                                    split_in <= 1'b1;
+                                    
+                                    next_state <= idle;  
+                                    end
                                 end
                         end
                     

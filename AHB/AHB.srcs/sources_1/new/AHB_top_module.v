@@ -62,10 +62,10 @@ module AHB_top_module(
     wire [31:0] hrdata3;
     wire [31:0] hrdata4;
     
-    wire [15:0] hsplit1;
-    wire [15:0] hsplit2;
-    wire [15:0] hsplit3;
-    wire [15:0] hsplit4;
+    wire  hsplit1;
+    wire  hsplit2;
+    wire  hsplit3;
+    wire  hsplit4;
     
     wire hsel1;
     wire hsel2;
@@ -134,7 +134,7 @@ module AHB_top_module(
         .hresetn(hresetn),
         .hrdata(hrdata_mux_out),
         .hready(hready),
-        .hresp(hresp),  
+       // .hresp(hresp),  
         .hgrant(hgrant1),
    
         .haddr(haddr1),
@@ -151,8 +151,9 @@ module AHB_top_module(
         .hresetn(hresetn),
         .hrdata(hrdata_mux_out),
         .hready(hready),
-        .hresp(hresp), 
+         
         .hgrant(hgrant2),
+        .hresp(hresp),
    
         .haddr(haddr2),
         .hwrite(hwrite2),
@@ -167,7 +168,7 @@ module AHB_top_module(
         .hresetn(hresetn),
         .hrdata(hrdata_mux_out),
         .hready(hready),
-        .hresp(hresp),      
+      //  .hresp(hresp),      
         .hgrant(hgrant3),
         .addr(ext_addr),            
         .slv_sel_in(ext_slv_sel_in),
@@ -278,7 +279,7 @@ module AHB_top_module(
         .hwdata_mux_out(hwdata_mux_out),
         .hrdata(hrdata2),  
         .hready(hready2),    
-        .hresp(hresp),
+      //  .hresp(hresp),
         .hsplit(hsplit2)
         );
     
@@ -291,7 +292,7 @@ module AHB_top_module(
         .hwdata_mux_out(hwdata_mux_out),
         .hrdata(hrdata3),  
         .hready(hready3),    
-        .hresp(hresp),
+      //  .hresp(hresp),
         .hsplit(hsplit3)
         );
     

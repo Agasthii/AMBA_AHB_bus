@@ -35,15 +35,16 @@ module AHB_arbiter #(
     input htrans2,
     input htrans3,
     //from slave
-    input [15:0] hsplit1,
-    input [15:0] hsplit2,
-    input [15:0] hsplit3,
-    input [15:0] hsplit4,
+    input  hsplit1,
+    input  hsplit2,
+    input  hsplit3,
+    input  hsplit4,
     
     //to master
     output reg hgrant1,
     output reg hgrant2,
     output reg hgrant3,
+    output reg hresp,
     //to addr_mux & data_mux
     output reg [1:0] hmaster   //indicates the master which currently utilizes the bus
     );
@@ -64,6 +65,24 @@ module AHB_arbiter #(
             hgrant3 <= 1'b0;
             hmaster <= 2'b00;
             mast_changed <= 1'b0;
+        end   
+        else if (hsplit2)
+        begin 
+            hgrant2<= 1'b0;
+            hresp <= 1'b1;
+            if (hbusreq1)
+            begin 
+                hgrant1 <= 1'b1;
+                present_mast <= mast1;  
+            end
+            
+            if (hbusreq3)
+            begin 
+                hgrant3 <= 1'b1;
+                present_mast <= mast3;  
+            end
+        
+       
         end else begin
 //            present_mast <= next_mast;
             case (present_mast)
