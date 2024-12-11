@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09/30/2024 10:47:18 PM
+// Create Date: 12/11/2024 10:21:02 AM
 // Design Name: 
-// Module Name: AHB_slave_module
+// Module Name: AHB_slave2_module2
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module AHB_slave_module(
+module AHB_slave2_module2(
     input hclk,
     input hresetn,
     input [31:0] haddr,
@@ -89,13 +89,22 @@ module AHB_slave_module(
                         end
                         
                     read: begin
-                            
-                                hrdata <= memory[raddr] ;
+                            if (counter != 3'b111)
+                                begin 
+                                    counter <= counter +1;
+                                    split_in <= 1'b1;
+                                end
+                            else
+                                begin
                                 counter <= 3'd0;
                                 if (hwrite || ~hsel) 
                                     begin
+                                    hrdata <= memory[raddr] ;
+                                    split_in <= 1'b1;
+                                    
                                     next_state <= idle;  
                                     end
+                                end
                   
                         end
                     

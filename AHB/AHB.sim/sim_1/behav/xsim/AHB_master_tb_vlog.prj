@@ -12,9 +12,11 @@ verilog xil_defaultlib  \
 "../../../../AHB.srcs/sources_1/new/AHB_read_data_mux.v" \
 "../../../../AHB.srcs/sources_1/new/AHB_slave.v" \
 "../../../../AHB.srcs/sources_1/new/AHB_slave1_top.v" \
+"../../../../AHB.srcs/sources_1/new/AHB_slave2_module2.v" \
 "../../../../AHB.srcs/sources_1/new/AHB_slave2_top.v" \
 "../../../../AHB.srcs/sources_1/new/AHB_slave3_top.v" \
 "../../../../AHB.srcs/sources_1/new/AHB_slave_module.v" \
+"../../../../AHB.srcs/sources_1/new/AHB_slave_module2.v" \
 "../../../../AHB.srcs/sources_1/new/AHB_top_module.v" \
 "../../../../AHB.srcs/sources_1/new/AHB_write_data_mux.v" \
 "../../../../AHB.srcs/sim_1/new/AHB_master_tb.v" \

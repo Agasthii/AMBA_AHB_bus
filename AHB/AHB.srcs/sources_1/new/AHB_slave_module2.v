@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09/25/2024 04:49:09 PM
+// Create Date: 12/11/2024 09:50:15 AM
 // Design Name: 
-// Module Name: AHB_slave
+// Module Name: AHB_slave_module2
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module AHB_slave(
+module AHB_slave_interfac2(
     input hclk, //master clock
     input hresetn,  //master reset, active LOW
     //from slave module
@@ -92,13 +92,13 @@ module AHB_slave(
                 hwdata_out <= temp_hwdata;
                 hrdata <= 32'b0;
                 
-                
             end
             
             else if (!hwrite)
             begin
-                hrdata <= hrdata_in;
-                hsplit <=1'b0;    
+                hrdata <= hrdata_in;    
+                hsplit <= 1'b0;
+               
 
             end
         end
