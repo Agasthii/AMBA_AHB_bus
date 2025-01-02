@@ -83,6 +83,12 @@ module AHB_arbiter #(
                 hgrant3 <= 1'b1;
                 present_mast <= mast3;  
             end
+            
+        else if (!hsplit2)
+        begin 
+            hgrant2<= 1'b1;
+            hresp <= 1'b1;
+        end
         
        
         end else begin

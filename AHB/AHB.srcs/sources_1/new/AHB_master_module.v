@@ -47,7 +47,7 @@ module AHB_master_module(
             counter <= 2'b0;
             counter_id <= 4'b0;
         end else begin
-            if (counter_id == 3'b111 && counter == 2'b11) begin
+            if (counter_id == 4'b1111 && counter == 2'b11) begin
                 counter_id <= 4'b0;
                 counter <= 2'b0;
             end else begin
@@ -144,7 +144,7 @@ module AHB_master_module(
                     addr <= 32'd1;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b0;
+                    wr <= 1'b1;
                     hbusreq_in <= 1'b1;
                     enable <= 1'b1;
                 end
@@ -153,7 +153,7 @@ module AHB_master_module(
                     addr <= 32'd1;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b0;
+                    wr <= 1'b1;
                     hbusreq_in <= 1'b0;
                     enable <= 1'b0;
                 end
@@ -162,7 +162,7 @@ module AHB_master_module(
                     addr <= 32'b1;
                     slv_sel_in <= 2'b00;
                     din <= 32'b0;
-                    wr <= 1'b0;
+                    wr <= 1'b1;
                     hbusreq_in <= 1'b0;
                     enable <= 1'b0;
                 end

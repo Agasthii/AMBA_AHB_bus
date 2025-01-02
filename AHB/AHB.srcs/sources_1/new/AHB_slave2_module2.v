@@ -41,7 +41,7 @@ module AHB_slave2_module2(
     reg [31:0] memory [31:0];
     reg [4:0] waddr;
     reg [4:0] raddr;
-    
+    reg next_state_done;
     reg [1:0] present_state;
     reg [1:0] next_state;
     reg [2:0] counter;
@@ -52,13 +52,16 @@ module AHB_slave2_module2(
     
     always @(posedge hclk)
         begin
-        
+            
+            
             // Initialize memory during reset
             memory[0] <= 32'd1;
             memory[1] <= 32'd2;
             memory[2] <= 32'd3;
             memory[3] <= 32'd4;
             memory[4] <= 32'd5;
+            memory[9] <= 32'd0;
+            memory[10] <= 32'd0;
             
             waddr <= haddr[4:0];
             raddr<=haddr[4:0];
@@ -80,29 +83,35 @@ module AHB_slave2_module2(
                         hready_out <= 1'b1;
                         /*waddr <= 5'b0;
                         raddr <= 5'b0;*/
-                        if (hwrite && hsel)
+                        if (hwrite)
                         begin 
                             next_state<= write;
                         end
-                        else if (!hwrite && hsel)
+                        else if (!hwrite)
                             next_state <= read; 
+                             counter <= 3'd0;
                         end
                         
                     read: begin
-                            if (counter != 3'b111)
+                            if (counter != 3'b111 )
                                 begin 
                                     counter <= counter +1;
                                     split_in <= 1'b1;
                                 end
-                            else
+                            else if (counter == 3'b111)
                                 begin
-                                counter <= 3'd0;
+                                
+                                hrdata <= memory[raddr] ;
+                                split_in <= 1'b0;
+                                next_state <= write; 
+                                next_state_done <=1'b1; 
                                 if (hwrite || ~hsel) 
                                     begin
-                                    hrdata <= memory[raddr] ;
-                                    split_in <= 1'b1;
                                     
-                                    next_state <= idle;  
+                                    
+                                    
+                                    
+                                    
                                     end
                                 end
                   
@@ -118,6 +127,11 @@ module AHB_slave2_module2(
                                 end
                                 else
                                 begin 
+                                    if (counter==3'b111)
+                                    begin
+                                        split_in <= 1'b0;
+                                        hrdata <= memory[raddr] ;
+                                    end
                                     memory[waddr] <= hwdata;
                                     error <= 1'b0;
                                     if  (~hsel || ~hwrite)

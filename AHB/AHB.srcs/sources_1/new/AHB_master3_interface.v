@@ -78,7 +78,7 @@ module AHB_master3_interface #(
             hwdata <= 32'b0;
             slv_sel_out <= 2'b0;
             dout <= 32'b0;
-//            hbusreq <= 1'b0;
+           //hbusreq <= 1'b0;
         end /*else begin
     
             case (present_state)

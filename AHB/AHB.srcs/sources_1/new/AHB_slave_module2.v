@@ -91,6 +91,7 @@ module AHB_slave_interfac2(
                
                 hwdata_out <= temp_hwdata;
                 hrdata <= 32'b0;
+                hsplit <= 1'b0;
                 
             end
             
@@ -108,6 +109,7 @@ module AHB_slave_interfac2(
             hrdata <= 32'b0; 
             haddr_out <= 32'b0;
             hwdata_out <= 32'b0;
+        hsplit <= 1'b0;
            
         end
         

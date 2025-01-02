@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,276.950 ns"></ZoomEndTime>
-      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+      <ZoomStartTime time="363.600 ns"></ZoomStartTime>
+      <ZoomEndTime time="882.101 ns"></ZoomEndTime>
+      <Cursor1Time time="431.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="172"></NameColumnWidth>
-      <ValueColumnWidth column_width="89"></ValueColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="29" />
+   <WVObjectSize size="27" />
    <wvobject fp_name="/AHB_master_tb/hclk" type="logic">
       <obj_property name="ElementShortName">hclk</obj_property>
       <obj_property name="ObjectShortName">hclk</obj_property>
@@ -100,14 +100,6 @@
       <obj_property name="ElementShortName">counter_id[3:0]</obj_property>
       <obj_property name="ObjectShortName">counter_id[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_master1_top_d/AHB_master1_interface_d/present_state" type="array">
-      <obj_property name="ElementShortName">present_state[2:0]</obj_property>
-      <obj_property name="ObjectShortName">present_state[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_master2_top_d/AHB_master2_interface_d/present_state" type="array">
-      <obj_property name="ElementShortName">present_state[2:0]</obj_property>
-      <obj_property name="ObjectShortName">present_state[2:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_arbiter_d/mast_changed" type="logic">
       <obj_property name="ElementShortName">mast_changed</obj_property>
       <obj_property name="ObjectShortName">mast_changed</obj_property>
@@ -128,12 +120,12 @@
       <obj_property name="ElementShortName">hsel</obj_property>
       <obj_property name="ObjectShortName">hsel</obj_property>
    </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/counter" type="array">
-      <obj_property name="ElementShortName">counter[2:0]</obj_property>
-      <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/haddr" type="array">
+      <obj_property name="ElementShortName">haddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">haddr[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/next_state" type="array">
-      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
-      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   <wvobject fp_name="/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/hrdata" type="array">
+      <obj_property name="ElementShortName">hrdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hrdata[31:0]</obj_property>
    </wvobject>
 </wave_config>

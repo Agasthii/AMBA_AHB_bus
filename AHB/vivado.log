@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed Dec 11 10:29:26 2024
-# Process ID: 11568
+# Start of session at: Wed Dec 11 13:02:19 2024
+# Process ID: 16580
 # Current directory: C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18876 C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17280 C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.xpr
 # Log file: C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/vivado.log
 # Journal file: C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB\vivado.jou
 # Running On: LAPTOP-CPUREE27, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16788 MB
@@ -78,68 +78,12 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1451.863 ; gain = 324.223
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'AHB_master_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
-ECHO is off.
-ECHO is off.
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_addr_mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_arbiter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_decoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master1_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master2_module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master2_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master3_interface
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master_module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave1_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_module2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave2_module2
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave2_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave3_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave_module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave_module2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave_interfac2
-INFO: [Common 17-344] 'run_program' was cancelled
-INFO: [Vivado 12-5357] 'compile' step aborted
-INFO: [Common 17-344] 'launch_simulation' was cancelled
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1468.887 ; gain = 395.531
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_top_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master2_module.v:]
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
@@ -151,47 +95,7 @@ INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Docum
 "xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
 ECHO is off.
 ECHO is off.
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_addr_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_addr_mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_arbiter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_arbiter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_decoder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_decoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master1_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master1_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master2_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master2_module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master2_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master2_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master3_interface.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master3_interface
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master_module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_read_data_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_read_data_mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave1_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_module2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave2_module2
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave2_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave3_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave_module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave_module2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave_interfac2
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_top_module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_write_data_mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_write_data_mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sim_1/new/AHB_master_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_master_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
@@ -218,32 +122,8 @@ WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/User
 WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:59]
 WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:75]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.AHB_master_module
-Compiling module xil_defaultlib.AHB_master
-Compiling module xil_defaultlib.AHB_master1_top
-Compiling module xil_defaultlib.AHB_master2_module
-Compiling module xil_defaultlib.AHB_master2_top
-Compiling module xil_defaultlib.AHB_master3_interface
-Compiling module xil_defaultlib.AHB_arbiter
-Compiling module xil_defaultlib.AHB_decoder
-Compiling module xil_defaultlib.AHB_addr_mux
-Compiling module xil_defaultlib.AHB_write_data_mux
-Compiling module xil_defaultlib.AHB_read_data_mux
-Compiling module xil_defaultlib.AHB_slave_module
-Compiling module xil_defaultlib.AHB_slave
-Compiling module xil_defaultlib.AHB_slave1_top
-Compiling module xil_defaultlib.AHB_slave2_module2
-Compiling module xil_defaultlib.AHB_slave_interfac2
-Compiling module xil_defaultlib.AHB_slave2_top
-Compiling module xil_defaultlib.AHB_slave3_top
-Compiling module xil_defaultlib.AHB_top_module
-Compiling module xil_defaultlib.AHB_master_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot AHB_master_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -264,13 +144,10 @@ source AHB_master_tb.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'AHB_master_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1553.980 ; gain = 45.562
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1544.859 ; gain = 39.738
 current_wave_config {AHB_master_tb_behav.wcfg}
 AHB_master_tb_behav.wcfg
-add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/hwrite}} 
-current_wave_config {AHB_master_tb_behav.wcfg}
-AHB_master_tb_behav.wcfg
-add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/split_in}} 
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/haddr}} 
 relaunch_sim
 Command: launch_simulation -step compile -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
@@ -286,8 +163,6 @@ INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Docum
 "xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
 ECHO is off.
 ECHO is off.
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave_module2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AHB_slave_interfac2
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
@@ -320,37 +195,111 @@ WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/User
 WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:59]
 WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:75]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.AHB_master_module
-Compiling module xil_defaultlib.AHB_master
-Compiling module xil_defaultlib.AHB_master1_top
-Compiling module xil_defaultlib.AHB_master2_module
-Compiling module xil_defaultlib.AHB_master2_top
-Compiling module xil_defaultlib.AHB_master3_interface
-Compiling module xil_defaultlib.AHB_arbiter
-Compiling module xil_defaultlib.AHB_decoder
-Compiling module xil_defaultlib.AHB_addr_mux
-Compiling module xil_defaultlib.AHB_write_data_mux
-Compiling module xil_defaultlib.AHB_read_data_mux
-Compiling module xil_defaultlib.AHB_slave_module
-Compiling module xil_defaultlib.AHB_slave
-Compiling module xil_defaultlib.AHB_slave1_top
-Compiling module xil_defaultlib.AHB_slave2_module2
-Compiling module xil_defaultlib.AHB_slave_interfac2
-Compiling module xil_defaultlib.AHB_slave2_top
-Compiling module xil_defaultlib.AHB_slave3_top
-Compiling module xil_defaultlib.AHB_top_module
-Compiling module xil_defaultlib.AHB_master_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot AHB_master_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+run 100 ns
+current_wave_config {AHB_master_tb_behav.wcfg}
+AHB_master_tb_behav.wcfg
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/hrdata}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master1_top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:156]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:270]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:296]
+WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:132]
+WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:166]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:53]
+WARNING: [VRFC 10-5021] port 'valid_aft_split_in' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:66]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:50]
+WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:60]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:50]
+WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:59]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:75]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+run 100 ns
+current_wave_config {AHB_master_tb_behav.wcfg}
+AHB_master_tb_behav.wcfg
+add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/hwrite}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
+ECHO is off.
+ECHO is off.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master1_top.v:73]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:156]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:270]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:296]
+WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:132]
+WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:166]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:53]
+WARNING: [VRFC 10-5021] port 'valid_aft_split_in' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:66]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:50]
+WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:60]
+WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:50]
+WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:59]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:75]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1553.980 ; gain = 0.000
-current_wave_config {AHB_master_tb_behav.wcfg}
-AHB_master_tb_behav.wcfg
-add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/hsel}} 
+run 100 ns
+run 100 ns
 relaunch_sim
 Command: launch_simulation -step compile -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
@@ -362,105 +311,7 @@ INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Docum
 "xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
 ECHO is off.
 ECHO is off.
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
-ECHO is off.
-ECHO is off.
-Vivado Simulator v2023.2
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master1_top.v:73]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:156]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:270]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:296]
-WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:132]
-WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:166]
-WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:53]
-WARNING: [VRFC 10-5021] port 'valid_aft_split_in' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:66]
-WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:50]
-WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:60]
-WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:50]
-WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:59]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:75]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Time resolution is 1 ps
-current_wave_config {AHB_master_tb_behav.wcfg}
-AHB_master_tb_behav.wcfg
-add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/counter}} 
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
-ECHO is off.
-ECHO is off.
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log"
-ECHO is off.
-ECHO is off.
-Vivado Simulator v2023.2
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AHB_master_tb_behav xil_defaultlib.AHB_master_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_master1_top.v:73]
-WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'hresp' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:156]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:270]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:296]
-WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:132]
-WARNING: [VRFC 10-5021] port 'hresp' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_top_module.v:166]
-WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:53]
-WARNING: [VRFC 10-5021] port 'valid_aft_split_in' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave1_top.v:66]
-WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:50]
-WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave2_top.v:60]
-WARNING: [VRFC 10-5021] port 'htrans' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:50]
-WARNING: [VRFC 10-5021] port 'error' is not connected on this instance [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:59]
-WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'hsplit' [C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.srcs/sources_1/new/AHB_slave3_top.v:75]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Time resolution is 1 ps
-current_wave_config {AHB_master_tb_behav.wcfg}
-AHB_master_tb_behav.wcfg
-add_wave {{/AHB_master_tb/AHB_top_module_dut/AHB_slave2_top/AHB_slave2_module_d/next_state}} 
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj AHB_master_tb_vlog.prj"
-ECHO is off.
-ECHO is off.
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'AHB_master_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
@@ -496,21 +347,7 @@ INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to
 INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 Time resolution is 1 ps
 save_wave_config {C:/Users/User/Documents/AHB_Final_Final_real/AMBA_AHB_bus/AHB/AHB_master_tb_behav.wcfg}
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_top_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_slave2_module2.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master2_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_top_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_slave2_module2.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master2_module.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_top_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_slave2_module2.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master_module.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\User\Documents\AHB_Final_Final_real\AMBA_AHB_bus\AHB\AHB.srcs\sources_1\new\AHB_master2_module.v:]
-ERROR: [Common 17-180] Spawn failed: No error
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 10:38:12 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 14:30:30 2024...
