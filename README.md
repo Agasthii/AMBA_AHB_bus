@@ -9,19 +9,19 @@ The Bus hus has 2 masters and 3 slaves. Master 1 has priority, and one slave is 
 
 When communicating with the other team, if we are to read/write data from a slave module in the other team, our master connects to their bus bridge and requests/transmits data from/to their slave.
 
-### Master
+### Master block diagram
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/539fbb54-7375-4bec-b982-3f6e9e285943" alt="Alt Text" style="width:50%; height:auto;">
 </p>
 
-### Slave
+### Slave block diagram
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/aadbf93c-4a92-40b8-8274-d4408c7fe72b" alt="Alt Text" style="width:50%; height:auto;">
 </p>
 
-### Arbiter
+### Arbiter block diagram
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5b09ba29-7abb-4e3e-ac36-10ba2a972db5" alt="Alt Text" style="width:50%; height:auto;">
