@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/22a702e8-ceb0-4a80-801d-5e97c7401b16" alt="Alt Text" style="width:50%; height:auto;">
+  <img src="https://github.com/user-attachments/assets/22a702e8-ceb0-4a80-801d-5e97c7401b16" alt="Alt Text" style="width:90%; height:auto;">
 </p>
 
 The Bus hus has 2 masters and 3 slaves. Master 1 has priority, and one slave is split-supported. The slave sizes are as follows,
@@ -12,7 +12,7 @@ When communicating with the other team, if we are to read/write data from a slav
 ### Master
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/539fbb54-7375-4bec-b982-3f6e9e285943" alt="Alt Text" style="width:90%; height:auto;">
+  <img src="https://github.com/user-attachments/assets/539fbb54-7375-4bec-b982-3f6e9e285943" alt="Alt Text" style="width:50%; height:auto;">
 </p>
 
 ### Slave
