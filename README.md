@@ -5,4 +5,5 @@ The Bus hus has 2 masters and 3 slaves. Master 1 has priority, and one slave is 
   * Slave 1: 4 K (Split supported)
   * Slave 2: 4 K
   * Slave 3: 2 K
+
 When communicating with the other team, if we are to read/write data from a slave module in the other team, our master connects to their bus bridge and requests/transmits data from/to their slave.
