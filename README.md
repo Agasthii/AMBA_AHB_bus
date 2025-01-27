@@ -12,7 +12,7 @@ When communicating with the other team, if we are to read/write data from a slav
 ### Master
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/539fbb54-7375-4bec-b982-3f6e9e285943" alt="Alt Text" style="width:50%; height:auto;">
+  <img src="https://github.com/user-attachments/assets/539fbb54-7375-4bec-b982-3f6e9e285943" alt="Alt Text" style="width:90%; height:auto;">
 </p>
 
 ### Slave
